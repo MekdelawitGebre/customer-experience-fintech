@@ -16,3 +16,7 @@ wordcloud
 shap
 joblib
 python-dateutil
+transformers
+emoji
+torch
+
