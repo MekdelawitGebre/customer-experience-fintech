@@ -50,7 +50,7 @@ source .venv/bin/activate   # Linux/macOS
 pip install -r requirements.txt
 2. Database & Data Initialization
 
-```bash
+``` bash
 # Create database schema
 python - <<'PY'
 from src.db.postgres import create_schema
@@ -68,8 +68,8 @@ streamlit run src/dashboard/app.py
 
 ---
 
-## Project Structure
-Plaintext
+# Project structure
+``` plaintext
 customer-experience-fintech/
 ├─ data/
 │  └─ output/                  # CSV files with processed reviews
@@ -85,7 +85,7 @@ customer-experience-fintech/
 ├─ tests/                      # Unit tests (Pytest)
 ├─ requirements.txt            # Dependency list
 └─ README.md                   # Documentation
-
+```
 
 ---
 
