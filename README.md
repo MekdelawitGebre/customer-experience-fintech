@@ -49,19 +49,25 @@ source .venv/bin/activate   # Linux/macOS
 # Install dependencies
 pip install -r requirements.txt
 2. Database & Data Initialization
-Bash
+
+```bash
 # Create database schema
 python - <<'PY'
 from src.db.postgres import create_schema
 create_schema()
 PY
+```
 
 # Insert reviews into PostgreSQL
+``` bash
 python scripts/insert_reviews.py
 3. Launch Dashboard
-Bash
+```
 # Run the professional dashboard
 streamlit run src/dashboard/app.py
+
+---
+
 ## Project Structure
 Plaintext
 customer-experience-fintech/
@@ -80,6 +86,10 @@ customer-experience-fintech/
 ├─ requirements.txt            # Dependency list
 └─ README.md                   # Documentation
 
+
+---
+
+
 ## Technical Details
 Data Sources: Google Play reviews
 
@@ -94,6 +104,8 @@ Thematic Analysis: MultiLabelBinarizer for feature-impact analysis.
 KPIs: Average rating, sentiment strength, and Polarization Index.
 
 Infrastructure: PostgreSQL (Neon) for storage, Pytest for CI/CD integrity.
+
+---
 
 ## Future Improvements
 Automate live ingestion from app stores and social media.
