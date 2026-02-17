@@ -22,4 +22,4 @@ torch
 shap
 pytest
 pytest-mock
-
+plotly
