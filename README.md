@@ -37,18 +37,19 @@ This project automates review analysis, helping banks make data-driven decisions
 
 ### 1. Environment Setup
 ```bash
-# Clone the repo
+### Clone the repo
 git clone https://github.com/mekdelawitgebre/customer-experience-fintech
 cd customer-experience-fintech
 
-# Create virtual environment
+### Create virtual environment
 python -m venv .venv
 source .venv/bin/activate   # Linux/macOS
 # .venv\Scripts\activate    # Windows
 
-# Install dependencies
+### Install dependencies
 pip install -r requirements.txt
-2. Database & Data Initialization
+
+## 2. Database & Data Initialization
 
 ``` bash
 # Create database schema
@@ -58,17 +59,17 @@ create_schema()
 PY
 ```
 
-# Insert reviews into PostgreSQL
+### Insert reviews into PostgreSQL
 ``` bash
 python scripts/insert_reviews.py
 3. Launch Dashboard
 ```
-# Run the professional dashboard
+### Run the professional dashboard
 streamlit run src/dashboard/app.py
 
 ---
 
-# Project structure
+## Project structure
 ``` plaintext
 customer-experience-fintech/
 ├─ data/
@@ -115,6 +116,10 @@ Temporal analysis for tracking trends over time.
 Advanced NLP for aspect-based sentiment analysis (ABSA).
 
 Cloud deployment for multi-user access via Docker.
+
+## Demo
+https://www.awesomescreenshot.com/video/49529689?key=6cb9d029bbe27bee55d16aa5a4a13ca0
+
 
 ## Author
 Mekdelawit Gebre
